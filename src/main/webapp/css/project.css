@@ -6,7 +6,7 @@
 }
 
 body {
-	height: 2000px;
+	height: auto;
 }
 
 .menu {
@@ -15,7 +15,6 @@ body {
 	align-items: flex-start;
 	
 	width:100%;
-	height: 250px;
 	position: fixed;
 	top: 0px;
 	left: 0px;
@@ -23,9 +22,7 @@ body {
 	
 	background-color: lightsteelblue;
 	margin-top: -8px;
-	max-height: 300px;
 	
-	transition : max-height 1s;
 }
 
 
@@ -47,19 +44,25 @@ body {
 
 .menu-item {
 	position: relative;
-	width: 200px;
+	width: 150px;
 	height : auto;
 	margin-top: 35px;
 	margin-left: 0px;
 	left: 150px;
-	color: white;
+	
+	font-family: 'Nanum Gothic Coding', monospace;
+	color: dimgray;
 	flex-shrink: 0;  /*화면을 줄여도 flex를 줄이지 않는다*/
 	
 }
 
+.menu-item a {
+	text-decoration: none;
+}
+
 
 .menu-item:hover > .menu-title {
-	text-shadow:  10px 10px 5px silver;
+	text-shadow:  10px 10px 5px cadetblue;
 }
 
 .menu-item:hover > .sub-menu {
@@ -68,20 +71,22 @@ body {
 	transition : max-height 1s;
 }
 
-.menu-item:last-child {
-	margin-left : auto;
-	margin-right: 250px;
+.menu-item:nth-last-child(1) {
+	margin-left : 900px;
+	margin-right: 10px;
 }
 
 .menu-title {
 	padding: 10px;
-	font-size: 15pt;
+	font-size: 13pt;
 }
 
 .menu-title:hover + .sub-menu {
 	display: block;
 }
-
+.menu-title:hover + .log-menu {
+	display: block;
+}
 .sub-menu {
 	max-height : 0px;
 	overflow : hidden;
@@ -96,14 +101,43 @@ body {
 .sub-menu-item > a {
 	display: block;
 	padding: 10px;
-	font-size: 12pt;
+	font-size: 10pt;
 	text-decoration: none;
 	color: gray;
 }
 
 .sub-menu-item:hover > a {
-	background: #9D71BD;
-	color: white;
+	border-radius: 50px; 
+	background: lightcyan;
+	color: darkslateblue;
+}
+
+.log-menu {
+	max-height : 0px;
+	overflow : hidden;
+	list-style: none;
+	padding-left: 0px;
+}
+
+.login-name {
+	font-size: 10pt;
+}
+
+.login-name > a {
+	text-decoration: none;
+	color: gray;
+}
+
+.logout-sub > a {
+	display: block;
+	padding: 10px;
+	font-size: 10pt;
+	text-decoration: none;
+	color: gray;
+}
+
+.logout-sub:hover > a {
+	color: darkslateblue;
 }
 
 iframe {
