@@ -105,7 +105,7 @@ window.onload = function() {
 </ul>
 </nav>
 
-<iframe src="mainhome.jsp" 
+<iframe src="home.jsp" 
 		name="content"
 		width="100%"
 		scrolling ="no"
