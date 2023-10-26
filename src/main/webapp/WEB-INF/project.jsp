@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>project.jsp</title>
+<title>겜피셜</title>
 <link rel="stylesheet" href="css/project.css">
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
 <script type="text/javascript">
@@ -46,30 +46,39 @@ window.onload = function() {
 		</ol>
 	</li>
 	<li class="menu-item">
-		<div class="menu-title">게임정보</div>
+		<div class="menu-title">PC</div>
 		<ol class="sub-menu">
 			<li class="sub-menu-item"><a target="content" href="/cube.jsp">게임DB</a></li>
 			<li class="sub-menu-item"><a target="content" href="/ani/fill">공략</a></li>
-			<li class="sub-menu-item"><a target="content" href="/ani/cross">게임순위</a></li>
 			<li class="sub-menu-item"><a target="content" href="jquery_attr.jsp">스크린샷</a></li>
+			<li class="sub-menu-item"><a target="content" href="jquery_attr.jsp">동영상</a></li>
 		</ol>
 	</li>
 	<li class="menu-item">
-		<div class="menu-title">동영상</div>
+		<div class="menu-title">모바일</div>
 		<ol class="sub-menu">
-			<li class="sub-menu-item"><a target="content" href="/fill.jsp">PC</a></li>
-			<li class="sub-menu-item"><a target="content" href="/race.jsp">Mobile</a></li>
-			<li class="sub-menu-item"><a target="content" href="/zigzag.jsp">Video</a></li>
-			<li class="sub-menu-item"><a target="content" href="/zigzag.jsp">VR</a></li>
+			<li class="sub-menu-item"><a target="content" href="/cube.jsp">게임DB</a></li>
+			<li class="sub-menu-item"><a target="content" href="/ani/fill">공략</a></li>
+			<li class="sub-menu-item"><a target="content" href="jquery_attr.jsp">스크린샷</a></li>
+			<li class="sub-menu-item"><a target="content" href="jquery_attr.jsp">동영상</a></li>
 		</ol>
 	</li>
 	<li class="menu-item">
-		<div class="menu-title">게임순위</div>
+		<div class="menu-title">비디오</div>
 		<ol class="sub-menu">
-			<li class="sub-menu-item"><a target="content" href="/dept/list">PC</a></li>
-			<li class="sub-menu-item"><a target="content" href="/emp/list">Mobile</a></li>
-			<li class="sub-menu-item"><a target="content" href="/salgrade/list">Video</a></li>
-			<li class="sub-menu-item"><a target="content" href="/zigzag.jsp">VR</a></li>
+			<li class="sub-menu-item"><a target="content" href="/cube.jsp">게임DB</a></li>
+			<li class="sub-menu-item"><a target="content" href="/ani/fill">공략</a></li>
+			<li class="sub-menu-item"><a target="content" href="jquery_attr.jsp">스크린샷</a></li>
+			<li class="sub-menu-item"><a target="content" href="jquery_attr.jsp">동영상</a></li>
+		</ol>
+	</li>
+	<li class="menu-item">
+		<div class="menu-title">VR</div>
+		<ol class="sub-menu">
+			<li class="sub-menu-item"><a target="content" href="/cube.jsp">게임DB</a></li>
+			<li class="sub-menu-item"><a target="content" href="/ani/fill">공략</a></li>
+			<li class="sub-menu-item"><a target="content" href="jquery_attr.jsp">스크린샷</a></li>
+			<li class="sub-menu-item"><a target="content" href="jquery_attr.jsp">동영상</a></li>
 		</ol>
 	</li>
 	<sec:authorize access = "isAnonymous()">
@@ -81,12 +90,13 @@ window.onload = function() {
 	</sec:authorize>
 	<sec:authorize access="isAuthenticated()">
 	<li class="menu-item">
-	 <div class="menu-title"><img alt="" src="/img/profile-50.png"></div>
+	 <div class="menu-title"><img alt="" src="/img/profile-30-w.png"></div>
 	 	<ol class="sub-menu">
 			<li class="sub-menu-item">
 			 <div class="login-name">
 			 	<a href="#"><sec:authentication property="name"/>님!</a>
 			 </div>
+			 <hr>
 			</li>
 	 		<li class="logout-sub"><a href="/logout">로그아웃</a></li>
 	 	</ol>

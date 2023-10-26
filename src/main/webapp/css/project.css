@@ -20,7 +20,7 @@ body {
 	left: 0px;
 	text-align: center;
 	
-	background-color: lightsteelblue;
+	background-color: mediumslateblue;
 	margin-top: -8px;
 	
 }
@@ -32,7 +32,7 @@ body {
 	left: 90px;
 	font-family: 'Giants-Inline';
 	font-size: 3em;
-	color: darkslateblue;
+	color: white;
 }
 
 .logo-img {
@@ -51,7 +51,7 @@ body {
 	left: 150px;
 	
 	font-family: 'Nanum Gothic Coding', monospace;
-	color: dimgray;
+	color: white;
 	flex-shrink: 0;  /*화면을 줄여도 flex를 줄이지 않는다*/
 	
 }
@@ -72,8 +72,15 @@ body {
 }
 
 .menu-item:nth-last-child(1) {
-	margin-left : 900px;
+	margin-left : 750px;
 	margin-right: 10px;
+	margin-top: -2px;
+	color: darkgray;
+}
+
+.menu-item:nth-last-child(1) a {
+	font-size: 10px;
+	color: white;
 }
 
 .menu-title {
@@ -103,7 +110,7 @@ body {
 	padding: 10px;
 	font-size: 10pt;
 	text-decoration: none;
-	color: gray;
+	color: white;
 }
 
 .sub-menu-item:hover > a {
