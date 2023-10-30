@@ -7,6 +7,13 @@
 <meta charset="UTF-8">
 <title>login.jsp</title>
 <style type="text/css">
+@font-face {
+    font-family: 'Giants-Inline';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 section {
 	width: 100%;
 	justify-content: center;
@@ -35,6 +42,7 @@ input {
 
 h1 {
 	text-align: center;
+	font-family: 'Giants-Inline';
 }
 legend {
 	text-align: center;
@@ -59,7 +67,7 @@ legend {
 </head>
 <body>
 <section>
-	<h1>로그인</h1>
+	<h1>겜피셜</h1>
 	<c:if test="${param.error == ''}">
 		<div class="error">사용자 Id 또는 Password를 확인해 주세요</div>
 	</c:if>
@@ -76,7 +84,7 @@ legend {
 		</fieldset>
 		<fieldset>
 			<div class = "input loginbox">
-			<input type="submit" value="로그인" id="loginbox">
+			<input type="submit" value="Sign in" id="loginbox">
 			</div>
 		</fieldset>
 	</form>

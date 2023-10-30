@@ -9,6 +9,26 @@ body {
 	height: auto;
 }
 
+.logo {
+	position: relative;
+	display: flex;
+	justify-content: center; /* 가로 가운데 정렬 */
+    align-items: center; /* 세로 가운데 정렬 */
+	width: 100%;
+	margin:0 auto;
+	left: -10px;
+}
+
+#Gp {
+	position: relative;
+	top: 20px;
+	left: -50px;
+	font-family: 'Giants-Inline';
+	font-size: 4em;
+	color: black;
+}
+
+
 .menu {
 	display: flex;
 	list-style: none;
@@ -16,39 +36,19 @@ body {
 	
 	width:100%;
 	position: fixed;
-	top: 0px;
+	top: 150px;
 	left: 0px;
 	text-align: center;
 	
-	background-color: mediumslateblue;
-	margin-top: -8px;
+	background-color: #333;
 	
 }
 
 
-#Gp {
-	position: absolute;
-	top: 30px;
-	left: 90px;
-	font-family: 'Giants-Inline';
-	font-size: 3em;
-	color: white;
-}
-
-.logo-img {
-	position: relative;
-	float: left;
-	top: -5px;
-	left: -25px;
-}
-
 .menu-item {
-	position: relative;
 	width: 150px;
 	height : auto;
-	margin-top: 35px;
-	margin-left: 0px;
-	left: 150px;
+	margin: 0 auto;
 	
 	font-family: 'Nanum Gothic Coding', monospace;
 	color: white;
@@ -60,21 +60,18 @@ body {
 	text-decoration: none;
 }
 
-
 .menu-item:hover > .menu-title {
-	text-shadow:  10px 10px 5px cadetblue;
+	text-shadow:  10px 10px 5px darkgray;
 }
 
 .menu-item:hover > .sub-menu {
 	max-height: 300px;
-	
 	transition : max-height 1s;
 }
 
 .menu-item:nth-last-child(1) {
-	margin-left : 750px;
+	margin-left : auto;
 	margin-right: 10px;
-	margin-top: -2px;
 	color: darkgray;
 }
 
@@ -84,7 +81,7 @@ body {
 }
 
 .menu-title {
-	padding: 10px;
+	padding: 5px;
 	font-size: 13pt;
 }
 
@@ -94,6 +91,7 @@ body {
 .menu-title:hover + .log-menu {
 	display: block;
 }
+
 .sub-menu {
 	max-height : 0px;
 	overflow : hidden;
@@ -119,33 +117,7 @@ body {
 	color: darkslateblue;
 }
 
-.log-menu {
-	max-height : 0px;
-	overflow : hidden;
-	list-style: none;
-	padding-left: 0px;
-}
 
-.login-name {
-	font-size: 10pt;
-}
-
-.login-name > a {
-	text-decoration: none;
-	color: gray;
-}
-
-.logout-sub > a {
-	display: block;
-	padding: 10px;
-	font-size: 10pt;
-	text-decoration: none;
-	color: gray;
-}
-
-.logout-sub:hover > a {
-	color: darkslateblue;
-}
 
 iframe {
 	margin-top : 100px;

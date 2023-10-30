@@ -24,18 +24,20 @@ window.onload = function() {
 </script>
 </head>
 <body>
+<div>
+	<div class="logo">
+		<div class = "logo-img">
+			<a target="content" href="main.jsp">
+				<img alt="" src="/img/gs.png">
+			</a>
+		</div>
+		<div id="Gp">
+			겜피셜
+		</div>
+	</div>
+</div>
 <nav class = "nav">
 <ul class="menu">
-		<li class="menu-logo">
-			<div class = "logo-img">
-				<a target="content" href="mainhome.jsp">
-					<img alt="" src="/img/gs.png">
-				</a>
-			</div>
-			<div id="Gp">
-				겜피셜
-			</div>
-		</li>
 		<li class="menu-item">
 		<div class="menu-title">게임뉴스</div>
 		<ol class="sub-menu">
@@ -81,31 +83,10 @@ window.onload = function() {
 			<li class="sub-menu-item"><a target="content" href="jquery_attr.jsp">동영상</a></li>
 		</ol>
 	</li>
-	<sec:authorize access = "isAnonymous()">
-	<li class="menu-item">
-	 <div  class="menu-title">
-	 	<a href="/login">로그인</a>
-	 </div>
-	</li>
-	</sec:authorize>
-	<sec:authorize access="isAuthenticated()">
-	<li class="menu-item">
-	 <div class="menu-title"><img alt="" src="/img/profile-30-w.png"></div>
-	 	<ol class="sub-menu">
-			<li class="sub-menu-item">
-			 <div class="login-name">
-			 	<a href="#"><sec:authentication property="name"/>님!</a>
-			 </div>
-			 <hr>
-			</li>
-	 		<li class="logout-sub"><a href="/logout">로그아웃</a></li>
-	 	</ol>
-	</li>
-	</sec:authorize>
 </ul>
 </nav>
 
-<iframe src="home.jsp" 
+<iframe src="main.jsp" 
 		name="content"
 		width="100%"
 		scrolling ="no"

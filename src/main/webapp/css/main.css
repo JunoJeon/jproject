@@ -1,0 +1,66 @@
+
+
+.slider {
+    position: relative;
+    margin: 0 auto;
+	float: left;
+    width: 800px;  
+    padding: 10px;                               
+    overflow: hidden;
+}
+.slide {
+    float: left;
+    width: 800px;
+    position: relative;
+}
+img {
+    width: 100%;
+    height: 350px;                                                        
+} 
+/* 		로그인	 */
+.login {
+	
+	float: left;
+	width: 300px;
+	height: 350px;
+	margin-top: 10px;
+	
+	border : 1px solid black;
+	border-radius: 20px;
+	background-color: lightgray;
+	opacity: 0.7;
+	list-style: none;
+	
+}
+.log-menu {
+	max-height : 0px;
+	overflow : hidden;
+	list-style: none;
+	padding-left: 0px;
+}
+
+.logout-title {
+	width: 30px;
+	height: 10px;
+}
+
+.login-name {
+	font-size: 10pt;
+}
+
+.login-name > a {
+	text-decoration: none;
+	color: gray;
+}
+
+.logout-sub > a {
+	display: block;
+	padding: 10px;
+	font-size: 10pt;
+	text-decoration: none;
+	color: gray;
+}
+
+.logout-sub:hover > a {
+	color: darkslateblue;
+}
